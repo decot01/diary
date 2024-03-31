@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Самый лучший сайт</title>
+    <meta charset ="utf-8"> 
+    <link rel='stylesheet' href='style.css'>
+
+</head>
+<body>
+
+    <div class='header'>
+            <div class="container">
+                <div class="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+    
+
+            <form class="searcher">
+                <input type="search" placeholder="Что ищем?">
+                <button>Искать!</button>
+            </form>
+    </div>
+
+
+    <div class="line">
+        <div class="calendar">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2020</p>
+            </div>
+        </div>
+
+
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+
+
+
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button><img src="images/search.png"></button>
+            </div>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">22°c</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
